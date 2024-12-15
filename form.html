@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма заявки на ремонт</title>
+</head>
+<body>
+    <h2>Отправить заявку на ремонт</h2>
+    <form action="submit.php" method="post">
+        <label for="request_id">Номер заявки:</label>
+        <input type="text" id="request_id" name="request_id" required><br><br>
+        
+        <label for="date">Дата добавления:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <label for="equipment">Оборудование:</label>
+        <input type="text" id="equipment" name="equipment" required><br><br>
+        
+        <label for="issue_type">Тип неисправности:</label>
+        <input type="text" id="issue_type" name="issue_type" required><br><br>
+        
+        <label for="description">Описание проблемы:</label>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="client">Клиент:</label>
+        <input type="text" id="client" name="client" required><br><br>
+        
+        <label for="status">Статус заявки:</label>
+        <select id="status" name="status" required>
+            <option value="В ожидании">В ожидании</option>
+            <option value="В работе">В работе</option>
+            <option value="Выполнено">Выполнено</option>
+        </select><br><br>
+        
+        <input type="submit" value="Отправить заявку">
+    </form>
+    
+    <h2>Все заявки</h2>
+    <form action="show_entries.php" method="post">
+        <input type="submit" value="Показать все заявки">
+    </form>
+    <a href="logout.php">Выйти</a>
+    <a href="edit_form.html">редактировать</a>
+    <a href="comments_form.html">коментировать</a>
+
+
+</body>
+</html>

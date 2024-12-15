@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактировать заявку</title>
+</head>
+<body>
+    <h2>Редактировать заявку</h2>
+    <form action="edit.php" method="post">
+        <label for="request_id">Номер заявки:</label>
+        <input type="text" id="request_id" name="request_id" required><br><br>
+        
+        <label for="status">Статус заявки:</label>
+        <select id="status" name="status" required>
+            <option value="В ожидании">В ожидании</option>
+            <option value="В работе">В работе</option>
+            <option value="Выполнено">Выполнено</option>
+        </select><br><br>
+        
+        <label for="description">Новое описание проблемы:</label>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="responsible">Ответственный за выполнение:</label>
+        <input type="text" id="responsible" name="responsible" required><br><br>
+        
+        <input type="submit" value="Обновить заявку">
+    </form>
+    <a href="form.html">назад</a>
+    <a href="index.php">на страницу статистики</a>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить комментарий к заявке</title>
+</head>
+<body>
+    <h2>Добавить комментарий к заявке</h2>
+    <form action="comments.php" method="post">
+        <label for="request_id">Номер заявки:</label>
+        <input type="text" id="request_id" name="request_id" required><br><br>
+
+        <label for="comment">Комментарий:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Добавить комментарий">
+    </form>
+    <a href="form.html">назад</a>
+    <a href="index.php">на страницу статистики</a>
+</body>
+</html>
